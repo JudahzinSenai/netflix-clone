@@ -1,9 +1,29 @@
+/*!------ GERAL ------*/
+@font-face {
+    font-family: Netflix Sans;
+    src: url(../assets/fonte/netflix-sans-font/NetflixSans-Regular.otf);
+}
 *{
     margin: 0;
     padding: 0;
+
+    font-family: Netflix Sans;
+    color: white;
 }
+.imagem{
+    width: 100%;
+}
+header, main, footer, .seriesSection, .series{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*!------ HEADER ------*/
 header, footer{
-    height: 60px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
     background-color: black;
 }
 aside{
@@ -12,21 +32,50 @@ aside{
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.imagem{
-    width: 100%;
-}
-.logo{
-    width: 200px;
-    height: 100%;
+    /*!----- LEFTHEADER -----*/
+    .leftHeader{
+        justify-content: center;
+    }
+    .logo{
+        width: 200px;
+        height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.leftHeader{
-    justify-content: center;
-}
-.rightHeader{
-    justify-content: end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        gap: 10px;
+        
+        list-style: none;
+    }
+    nav ul a{
+        color: white;
+
+        text-decoration: none;
+    }
+    
+    /*!----- RIGHTHEADER ------*/
+    .rightHeader{
+        
+        justify-content: end;
+        gap: 15px;
+    }
+    .lupa{
+        height: 30px;
+    }
+    .profilePhoto{
+        height: 60px;
+    }
+    .seta{
+        margin-right: 70px;
+        height: 20px;
+    }
+
+/*!------ MAIN ------*/
+main{
+    height: 500px;
 }
