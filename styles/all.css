@@ -161,6 +161,9 @@ main{
     .seriesCapas img{
         width: 100%;
     }
+    #topSemana{
+        margin-bottom: 80px;
+    }
     /*!------ banner1 ------*/
     #banner2{
         height: 780px;
