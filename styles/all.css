@@ -18,6 +18,9 @@ header, main, .banner{
     display: flex;
     flex-wrap: wrap;
 }
+.logo, .lupa, .profilePhoto, .seta, .fBButtons button, .seriesCapas img, #banner2 .contentBanner, .categoriasList div{
+    cursor: pointer;
+}
 
 /*!------ HEADER ------*/
 header{
@@ -78,7 +81,7 @@ aside{
 
 /*!------ MAIN ------*/
 main{
-    height: 100vh;
+    height: 100%;
 }   
     /*!------ banner1 ------*/
     #banner1{
@@ -156,7 +159,6 @@ main{
         display: flex;
         justify-content: space-between;
         gap: 20px;
-        
     }
     .seriesCapas img{
         width: 100%;
@@ -167,7 +169,7 @@ main{
 
     /*!------ banner2 ------*/
     #banner2{
-        height: 95%;
+        height: 780px;
         
         background-image: url(../assets/images/2banner.png);
         background-size: cover;
@@ -232,7 +234,13 @@ main{
                 
 /*!------ FOOTER ------*/
 footer{
-    height: 1300px;
+    height: 90px;
     width: 100%;
-    background-color: #ff0000;
+    background-color: #141414;
+
+    text-align: center;
+    line-height: 90px;
+}
+footer p{
+    color: #a8a485;
 }
